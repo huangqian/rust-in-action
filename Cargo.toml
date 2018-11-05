@@ -1,0 +1,41 @@
+[package]
+name = "rust-in-action"
+version = "0.1.0"
+authors = ["黄骞 <huangqian866@163.com>"]
+
+[dependencies]
+rand = "0.5.5"
+redis = "0.9.0"
+log = "0.4.5"
+
+[[example]]
+name = "hello"
+path = "examples/hello.rs"
+
+[[example]]
+name = "tuple"
+path = "examples/tuple.rs"
+
+[[example]]
+name = "array"
+path = "examples/array.rs"
+
+[[example]]
+name = "functions"
+path = "examples/functions.rs"
+
+[[example]]
+name = "control-flow"
+path = "examples/control-flow.rs"
+
+[[example]]
+name = "loop"
+path = "examples/loop.rs"
+
+[[example]]
+name = "ownership"
+path = "examples/ownership.rs"
+
+[[example]]
+name = "structs"
+path = "examples/structs.rs"
