@@ -1,2 +1,2 @@
 # rust-in-action
-learing rust examples
+learning rust examples
