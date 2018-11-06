@@ -67,3 +67,7 @@ path = "examples/vectors.rs"
 [[example]]
 name = "hashmap"
 path = "examples/hashmap.rs"
+
+[[example]]
+name = "web-server"
+path = "examples/web-server.rs"
