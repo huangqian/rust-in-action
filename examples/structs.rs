@@ -43,6 +43,7 @@ fn main() {
 
     print_struct_example();
 
+    associated_functions();
 }
 
 //定义结构体需要使用struct关键字并为结构体提供一个名字。
@@ -92,6 +93,18 @@ impl Rectangle{
     fn area(&self) -> u32{
         self.width * self.height
     }
+
+    //多个参数的方法
+    fn can_hold(&self, other: &Rectangle) -> bool{
+        self.width > other.width && self.height > other.height
+    }
+
+    //关联函数，关联函数并不是实例的方法，它仍然是函数，它并不作用于一个结构体实例。
+    //关联函数通过结构体和::调用，比如 Rectangle::square(10)
+    fn square(size: u32) -> Rectangle{
+        Rectangle{width: size, height: size}
+    }
+
 }
 
 fn print_struct_example(){
@@ -101,5 +114,13 @@ fn print_struct_example(){
     println!(
         "The area of the rectangle is {} square pixels.",
         rect1.area()
+    );
+}
+
+fn associated_functions(){
+    let rect = Rectangle::square(10);
+    println!(
+        "The area of the rectangle is {} square pixels.",
+        rect.area()
     );
 }
