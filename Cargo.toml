@@ -39,3 +39,19 @@ path = "examples/ownership.rs"
 [[example]]
 name = "structs"
 path = "examples/structs.rs"
+
+[[example]]
+name = "print-format"
+path = "examples/print-format.rs"
+
+[[example]]
+name = "variables"
+path = "examples/variables.rs"
+
+[[example]]
+name = "references"
+path = "examples/references.rs"
+
+[[example]]
+name = "slices"
+path = "examples/slices.rs"
