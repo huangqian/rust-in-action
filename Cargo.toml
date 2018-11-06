@@ -55,3 +55,7 @@ path = "examples/references.rs"
 [[example]]
 name = "slices"
 path = "examples/slices.rs"
+
+[[example]]
+name = "match"
+path = "examples/match.rs"
