@@ -13,3 +13,7 @@ learning rust examples
 + [所有权](examples/ownership.rs)
 + [结构体](examples/structs.rs)
 + [模式匹配](examples/match.rs)
++ 集合
+
+   + [vector](examples/vectors.rs)
+   + [hashmap](examples/hashmap.rs)

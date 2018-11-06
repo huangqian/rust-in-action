@@ -59,3 +59,11 @@ path = "examples/slices.rs"
 [[example]]
 name = "match"
 path = "examples/match.rs"
+
+[[example]]
+name = "vector"
+path = "examples/vectors.rs"
+
+[[example]]
+name = "hashmap"
+path = "examples/hashmap.rs"
