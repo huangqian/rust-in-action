@@ -7,6 +7,7 @@ authors = ["黄骞 <huangqian866@163.com>"]
 rand = "0.5.5"
 redis = "0.9.0"
 log = "0.4.5"
+#rocket = "0.4.0-rc.1"
 
 [[example]]
 name = "hello"
@@ -57,6 +58,10 @@ name = "slices"
 path = "examples/slices.rs"
 
 [[example]]
+name = "enums"
+path = "examples/enums.rs"
+
+[[example]]
 name = "match"
 path = "examples/match.rs"
 
@@ -68,6 +73,3 @@ path = "examples/vectors.rs"
 name = "hashmap"
 path = "examples/hashmap.rs"
 
-[[example]]
-name = "web-server"
-path = "examples/web-server.rs"
