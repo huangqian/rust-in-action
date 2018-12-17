@@ -1,4 +1,7 @@
-
+//
+// 增加了rust的move和copy的理解。
+// 一般的赋值是move，不像java、C++那样是复制数据，
+// rust中是move，将=符号右边的数据移动给左边的变量，因此=符号右边的失效，
 #[derive(Copy, Clone)]
 struct Foo {
     data: i32
