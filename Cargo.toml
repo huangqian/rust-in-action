@@ -84,3 +84,7 @@ path = "examples/mysql.rs"
 name = "redis"
 path = "examples/redis.rs"
 
+[[example]]
+name = "copy"
+path = "examples/copy.rs"
+
