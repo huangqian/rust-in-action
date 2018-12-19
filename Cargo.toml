@@ -5,8 +5,11 @@ authors = ["黄骞 <huangqian866@163.com>"]
 
 [dependencies]
 rand = "0.5.5"
-redis = "0.9.0"
 log = "0.4.5"
+redis = "0.9.1"
+#mysql = "*"
+#diesel = { version = "1.3.0", features = ["mysql"] }
+#dotenv = "0.10"
 #rocket = "0.4.0-rc.1"
 mysql = "14.1.1"
 
@@ -75,6 +78,20 @@ path = "examples/vectors.rs"
 [[example]]
 name = "hashmap"
 path = "examples/hashmap.rs"
+
+[[example]]
+name = "panic"
+path = "examples/panic.rs"
+
+#[[example]]
+#name = "orm-diesel"
+#path = "examples/orm-diesel-mysql.rs"
+
+[[example]]
+name = "traits"
+path = "examples/traits.rs"
+
+
 
 [[example]]
 name = "mysql"
