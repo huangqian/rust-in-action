@@ -105,3 +105,11 @@ path = "examples/redis.rs"
 name = "copy"
 path = "examples/copy.rs"
 
+[[example]]
+name = "closure"
+path = "examples/closure.rs"
+
+[[example]]
+name = "macro"
+path = "examples/macro.rs"
+
