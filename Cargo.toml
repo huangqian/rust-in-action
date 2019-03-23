@@ -113,3 +113,7 @@ path = "examples/closure.rs"
 name = "macro"
 path = "examples/macro.rs"
 
+[[example]]
+name = "box"
+path = "examples/box.rs"
+
