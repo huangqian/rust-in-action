@@ -109,3 +109,7 @@ path = "examples/macro.rs"
 name = "box"
 path = "examples/box.rs"
 
+[[example]]
+name = "borrow"
+path = "examples/borrow.rs"
+
