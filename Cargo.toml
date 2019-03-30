@@ -6,7 +6,7 @@ authors = ["黄骞 <huangqian866@163.com>"]
 [dependencies]
 rand = "0.5.5"
 log = "0.4.5"
-redis = "0.9.1"
+redis = "*"
 mysql = "15.1.0"
 
 

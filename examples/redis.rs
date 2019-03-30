@@ -1,21 +1,24 @@
+#![feature(proc_macro_hygiene, decl_macro)]
 
-extern  crate redis;
+#[macro_use]
+extern crate redis;
 
-use redis::Commands;
+use redis::{Commands, PipelineCommands};
 
-fn main(){
+#[cfg(test)]
+mod test {
+    use super::*;
 
-    let val = get();
-    println!("{:?}", val)
-}
+    #[test]
+    pub fn test_hello_simple() {
+        let client = redis::Client::open("redis://192.168.30.244/0").unwrap();
+        let mut conn = client.get_connection().unwrap();
 
+//        let _: () = redis::cmd("SET").arg("rust-key-1").arg(42).query(&conn).unwrap();
 
-fn get() -> redis::RedisResult<isize> {
+        let val: isize = redis::cmd("GET").arg("rust-key-1").query(&conn).unwrap();
 
-    let client = try!(redis::Client::open("redis://192.168.30.244/"));
-    let con = try!(client.get_connection());
+        println!("rust-key-1 value was {}", val);
+    }
 
-    let _ : () = try!(con.set("my_key", 42));
-
-    con.get("my_key")
 }
