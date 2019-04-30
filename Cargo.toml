@@ -113,3 +113,7 @@ path = "examples/box.rs"
 name = "borrow"
 path = "examples/borrow.rs"
 
+[[example]]
+name = "lifetimes"
+path = "examples/lifetimes.rs"
+
