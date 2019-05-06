@@ -1,15 +1,21 @@
-struct Context<'s>(&'s str);
 
-struct Parser<'c, 's: 'c> {
-    context: &'c Context<'s>,
-}
-
-impl<'c, 's> Parser<'c, 's> {
-    fn parse(&self) -> Result<(), &'s str> {
-        Err(&self.context.0[1..])
+fn largest<'a, 'b>(str1: &'a str, str2: &'b str) -> &'b str
+    where 'a : 'b {
+    if str1.len() >= str2.len() {
+        str1
+    } else {
+        str2
     }
 }
 
-fn parse_context(context: Context) -> Result<(), &str> {
-    Parser { context: &context }.parse()
+fn main() {
+
+    let str1 = "123";
+    {
+        let str2 = "4567";
+        let ret = largest(&str1, &str2);
+        println!("str1={}", str1);
+        println!("str2={}", str2);
+        println!("ret={}", ret);
+    }
 }
