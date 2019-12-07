@@ -6,8 +6,9 @@ authors = ["黄骞 <huangqian866@163.com>"]
 [dependencies]
 rand = "0.5.5"
 log = "0.4.5"
-redis = "*"
+redis = "0.10.0"
 mysql = "15.1.0"
+croaring = "0.4.1"
 
 
 
@@ -26,6 +27,15 @@ path = "examples/array.rs"
 [[example]]
 name = "functions"
 path = "examples/functions.rs"
+
+[[example]]
+name = "function-pointer"
+path = "examples/function-pointer.rs"
+
+
+[[example]]
+name = "compile-time-function-execution"
+path = "examples/compile-time-function-execution.rs"
 
 [[example]]
 name = "control-flow"
@@ -117,3 +127,10 @@ path = "examples/borrow.rs"
 name = "lifetimes"
 path = "examples/lifetimes.rs"
 
+[[example]]
+name = "list"
+path = "examples/collection/list.rs"
+
+[[example]]
+name = "roaring-bitmap"
+path = "examples/bitmap/roaring-bitmap.rs"
